@@ -20,16 +20,6 @@ This Power BI report provides an in-depth and interactive analysis of Indian Pre
 
 ---
 
-## 🖼️ Screenshots
-
-### Team Performance Summary
-![Team Stats](./screenshots/fe8c10a2-8e2b-4269-87a9-a0f34951c284.png)
-
-### Player Statistics Table
-![Player Stats](./screenshots/44c26655-31c9-4d4d-bbd0-8f641d1b0761.png)
-
----
-
 ## 🔍 Report Pages & Insights
 
 ### 1. **IPL Overview**
@@ -47,11 +37,14 @@ This Power BI report provides an in-depth and interactive analysis of Indian Pre
 ---
 
 ## 📁 Data Sources
+Cricsheet Ball by ball data can be found here: https://cricsheet.org/matches/
 
-- Match data
-- Ball-by-ball delivery data
-- Player and team metadata
-
+Data from the website has been consumed and made into the following tables in a star Schema:
+-Ball by Ball data (fact)
+-Match (dim)
+-Player (dim)
+-Team (dim)
+-Team Player (dim)
 These datasets are modeled using Power BI’s data transformation tools and loaded into interactive visuals.
 
 ---
@@ -65,13 +58,5 @@ These datasets are modeled using Power BI’s data transformation tools and load
 - Slicers for Filtering  
 - Drill-through Support for Detailed View
 
----
-
-## ⚙️ How to Use
-
-1. Clone or download the repository.
-2. Open `IPL.pbix` in Power BI Desktop.
-3. Explore dashboards using interactive filters and slicers.
-4. Optional: Publish to Power BI Service to share online.
 
 ---
